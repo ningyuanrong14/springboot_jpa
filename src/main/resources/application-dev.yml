@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    primary:
+      username: zmsm
+      password: 123456
+      url: jdbc:mysql://130.120.3.158:3306/zmsm?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      tomcat:
+        max-active: 30
+        test-on-borrow: true
+        initial-size: 3
+        
+    secondary:
+      username: ommsxc
+      password: ommsxc
+      url: jdbc:oracle:thin:@130.120.2.105:1521/orcl
+      driver: oracle.jdbc.driver.OracleDriver
+      tomcat:
+        max-active: 30
+        test-on-borrow: true
+        initial-size: 3
